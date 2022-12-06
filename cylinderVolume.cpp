@@ -12,7 +12,7 @@ float CylinderVolumeCalculation(int radius, int height) {
     // This function finds the volume of the cylinder
     float volume;
 
-    if(height <= 0 or radius <= 0) {
+    if (height <= 0 || radius <= 0) {
         volume = -1;
         return volume;
     } else {
