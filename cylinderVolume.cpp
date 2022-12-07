@@ -30,10 +30,10 @@ int main() {
     float volume;
 
     // Input
-    std::cout << "Enter the radius of the cylinder (cm): ";
+    std::cout << "Enter the radius of the cylinder (mm): ";
     std::cin >> radius_from_user;
     std::cout << "" << std::endl;
-    std::cout << "Enter the height of the cylinder (cm): ";
+    std::cout << "Enter the height of the cylinder (mm): ";
     std::cin >> height_from_user;
     std::cout << "" << std::endl;
 
