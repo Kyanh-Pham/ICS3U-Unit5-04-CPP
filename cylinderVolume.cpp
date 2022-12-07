@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-float cylinderVolumeCalculation(int radius, int height) {
+float CylinderVolumeCalculation(int radius, int height) {
     // This function finds the volume of the cylinder
     float volume;
 
@@ -41,10 +41,10 @@ int main() {
         radius = std::stoi(radius_from_user);
         height = std::stoi(height_from_user);
         // Call function
-        volume = cylinderVolumeCalculation(radius, height);
+        volume = CylinderVolumeCalculation(radius, height);
         std::cout << "The volume of a cylinder with the radius of "
-                  << radius << " cm and the height of " << height << " cm is "
-                  << volume << " cm³.";
+                  << radius << " mm and the height of " << height << " mm is "
+                  << volume << " mm³.";
     } catch (std::invalid_argument) {
         std::cout << "Invalid Input." << std::endl;
     }
