@@ -42,9 +42,14 @@ int main() {
         height = std::stoi(height_from_user);
         // Call function
         volume = CylinderVolumeCalculation(radius, height);
-        std::cout << "The volume of a cylinder with the radius of "
-                  << radius << " mm and the height of " << height << " mm is "
-                  << volume << " mm³.";
+        
+        if(volume == -1) {
+            std::cout << "Invalid Input" << std::endl;
+        } else {
+            std::cout << "The volume of a cylinder with the radius of "
+                      << radius << " mm and the height of " << height << " mm is "
+                      << volume << " mm³.";
+        }
     } catch (std::invalid_argument) {
         std::cout << "Invalid Input." << std::endl;
     }
